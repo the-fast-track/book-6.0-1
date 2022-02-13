@@ -12,3 +12,13 @@ services:
     image: schickling/mailcatcher
     ports: [1025, 1080]
 ###< symfony/mailer ###
+
+###> blackfireio/blackfire-symfony-meta ###
+  blackfire:
+    image: blackfire/blackfire:2
+    # uncomment to store Blackfire credentials in a local .env.local file
+    #env_file: .env.local
+    environment:
+      BLACKFIRE_LOG_LEVEL: 4
+    ports: [8307]
+###< blackfireio/blackfire-symfony-meta ###

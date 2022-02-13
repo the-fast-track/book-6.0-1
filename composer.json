@@ -7,6 +7,7 @@
         "php": ">=8.0.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "blackfireio/blackfire-symfony-meta": "^1.0",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.5",
         "doctrine/doctrine-migrations-bundle": "^3.2",
@@ -43,6 +44,7 @@
         "symfony/webapp-meta": "^1.0",
         "symfony/webpack-encore-bundle": "^1.12",
         "symfony/yaml": "6.0.*",
+        "symfonycorp/platformsh-meta": "^1.0",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
