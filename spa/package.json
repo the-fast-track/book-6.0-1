@@ -1,0 +1,15 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@symfony/webpack-encore": "^1.8.1",
+    "babel-preset-preact": "^2.0.0",
+    "bootstrap": "^5.1.3",
+    "html-webpack-plugin": "^5.5.0",
+    "preact": "^10.6.5"
+  }
+}
