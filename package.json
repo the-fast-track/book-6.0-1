@@ -4,7 +4,9 @@
         "@symfony/stimulus-bridge": "^3.0.0",
         "@symfony/webpack-encore": "^1.7.0",
         "core-js": "^3.0.0",
+        "node-sass": "^7.0.1",
         "regenerator-runtime": "^0.13.2",
+        "sass-loader": "^12.4.0",
         "webpack-notifier": "^1.6.0"
     },
     "license": "UNLICENSED",
