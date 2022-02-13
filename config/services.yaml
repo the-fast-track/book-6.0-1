@@ -36,3 +36,5 @@ services:
         tags:
             - { name: 'doctrine.orm.entity_listener', event: 'prePersist', entity: 'App\Entity\Conference'}
             - { name: 'doctrine.orm.entity_listener', event: 'preUpdate', entity: 'App\Entity\Conference'}
+
+    Symfony\Component\HttpKernel\HttpCache\StoreInterface: '@http_cache.store'
