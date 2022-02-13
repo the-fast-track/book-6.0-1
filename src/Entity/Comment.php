@@ -25,6 +25,10 @@ class Comment
     #[ORM\Column(type: 'datetime_immutable')]
     private $createdAt;
 
+    #[ORM\ManyToOne(targetEntity: Conference::class, inversedBy: 'comments')]
+    #[ORM\JoinColumn(nullable: false)]
+    private $conference;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +78,18 @@ class Comment
     public function setCreatedAt(\DateTimeImmutable $createdAt): self
     {
         $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getConference(): ?Conference
+    {
+        return $this->conference;
+    }
+
+    public function setConference(?Conference $conference): self
+    {
+        $this->conference = $conference;
 
         return $this;
     }
